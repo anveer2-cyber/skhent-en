@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://en.skhentml.com/sitemap.xml
