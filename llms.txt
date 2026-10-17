@@ -3,6 +3,7 @@
 > English-speaking ENT (ear, nose & throat) specialist clinic in Jinhae, Changwon, South Korea.
 > English information page: https://en.skhentml.com/
 > Korean website: https://www.skhentml.com/
+> English ENT health blog: https://en.skhentml.com/blog/
 
 ## Key facts
 
@@ -18,7 +19,7 @@
 
 ## Doctors
 
-- Dr. Oh Jung-ho: Director, otolaryngology (ENT) specialist; consults in English; visiting professor, Kosin University College of Medicine
+- Dr. Jungho Oh: Director, otolaryngology (ENT) specialist; consults in English; visiting professor, Kosin University College of Medicine
 - Dr. Lee Young-jin: Director, board-certified pediatrician with pediatric emergency subspecialty
 
 ## Specialties
@@ -29,3 +30,29 @@
 - Rhinitis & allergy: MAST (108 allergens), ImmunoCAP, skin prick test; sublingual immunotherapy (LAIS)
 - Imaging: head & neck cone beam CT (Genoray Papaya, new in 2026), X-CUBE 90 ultrasound, Full HD ENT endoscopy
 - Also: vaccinations, IV nutrition therapy (12 private rooms), ENT outpatient procedures, snoring/sleep evaluation, skin & aesthetic procedures
+
+## Blog (English ENT health articles by Dr. Jungho Oh)
+
+- Blog index: https://en.skhentml.com/blog/
+- Articles are English adaptations of Dr. Jungho Oh's Korean blog posts; general health information, not individual medical advice.
+
+- [Sleep Apnea and Weight-Loss Medication: Do You Still Need Your CPAP?](https://en.skhentml.com/blog/sleep-apnea-weight-loss-medication-cpap/): Can weight-loss medication treat obstructive sleep apnea, and can you stop CPAP after losing weight? An ENT specialist in Changwon reviews the evidence.
+- [Blocked Nose? A Guide to Nasal Sprays: Steroid, Combination and Decongestant Sprays](https://en.skhentml.com/blog/blocked-nose-nasal-spray-guide/): Steroid, combination and decongestant nasal sprays work differently. An ENT specialist in Jinhae, Changwon explains when each is used and how to use them.
+- [Ringing in Your Ears? Tinnitus CBT: Training Your Brain Not to Follow the Sound](https://en.skhentml.com/blog/tinnitus-cbt-self-help/): Tinnitus distress depends on how the brain reacts to sound. An ENT specialist in Jinhae, Changwon explains tinnitus CBT, a 6-step home routine and red flags.
+- [Stopping Weight-Loss Medication: Will the Weight Come Back?](https://en.skhentml.com/blog/stopping-weight-loss-medication-weight-regain/): What happens after stopping GLP-1–based weight-loss medication? Trial evidence on weight regain, maintenance and habits, plus why sleep apnea needs re-checking.
+- [Negative Flu Test Just Hours After the Fever Started? Rapid Antigen vs Molecular (ID NOW) Testing](https://en.skhentml.com/blog/flu-test-negative-early-rapid-vs-molecular/): Why a rapid flu test can be negative in the first hours of fever, how a molecular test differs, and when each makes sense — from an ENT in Jinhae, Changwon.
+- [Mild or Moderate Hearing Loss: Do You Need Hearing Aids? What the 2026 Cochrane Review Says](https://en.skhentml.com/blog/hearing-aids-mild-moderate-hearing-loss-cochrane-2026/): Do you need hearing aids for mild or moderate hearing loss? An ENT specialist in Jinhae, Changwon sums up the 2026 Cochrane review: benefits, limits, fitting.
+- [How to Read Your Sleep Study (PSG) Report: AHI, Oxygen Levels and Sleep Stages](https://en.skhentml.com/blog/sleep-study-results-explained-ahi-oxygen-sleep-stages/): A plain-English guide to your sleep study (PSG) report — AHI, RDI, lowest oxygen, ODI, T90, sleep stages and arousals — from an ENT in Changwon, Korea.
+- [How Much Deep and REM Sleep Is Normal? Smartwatch Sleep Data vs a Real Sleep Study](https://en.skhentml.com/blog/deep-sleep-rem-smartwatch-sleep-apnea/): Typical deep, light and REM sleep proportions, how far to trust smartwatch sleep data, and a real comparison with a sleep study — from an ENT doctor in Korea.
+- [CPAP Therapy in Korea: Machine Types, Pressure Titration and National Health Insurance Rental](https://en.skhentml.com/blog/cpap-therapy-korea-types-insurance-rental/): How CPAP works, CPAP vs APAP vs BiPAP, pressure titration, National Health Insurance rental, co-payments and the 90-day adherence rule, explained by an ENT.
+- [Getting a Sleep Study (Polysomnography) in Jinhae: What to Expect, Step by Step](https://en.skhentml.com/blog/sleep-study-psg-what-to-expect/): Who needs a sleep study, what polysomnography measures, what happens on the night and how AHI guides treatment — from an English-speaking ENT clinic in Jinhae.
+- [Noise-Induced Hearing Loss and the Work-Injury Hearing Test in Korea](https://en.skhentml.com/blog/noise-induced-hearing-loss-workers-compensation-hearing-test/): Years in a shipyard or factory and now hard of hearing? An ENT explains noise-induced hearing loss and Korea's workers' compensation hearing test criteria.
+- [Snoring: Just Noise or a Warning Sign? When to Get Tested for Sleep Apnea](https://en.skhentml.com/blog/snoring-or-sleep-apnea-when-to-get-tested/): How simple snoring differs from obstructive sleep apnea, warning signs that mean you should get checked, and how a sleep study confirms it, from an ENT.
+- [Brandt–Daroff Exercises for BPPV: Is It Safe to Do Them at Home?](https://en.skhentml.com/blog/brandt-daroff-exercises-bppv-at-home/): Can you treat BPPV (positional vertigo) at home with Brandt-Daroff exercises? An ENT explains when they help, how to do them and when to see a doctor first.
+- [Atypical BPPV: Short-Arm Variants and Persistent Nystagmus — A Clinical Reference](https://en.skhentml.com/blog/atypical-bppv-short-arm-persistent-nystagmus/): Clinical reference on atypical BPPV: short-arm horizontal and posterior canal variants, conversion, Gufoni, Bow-and-Yaw, Bascule and central red flags.
+- [Weekly Weight-Loss Injections (GLP-1 Medications): A Patient Guide to Side Effects, Diet and Safety](https://en.skhentml.com/blog/glp1-weight-loss-injection-patient-guide/): A patient guide to weekly GLP-1-based weight-loss injections: how they work, injection tips, side effects, gallstone and pancreatitis risk, tests and diet.
+- [Sleeping Worse After Taking an Antihistamine? Why It Happens and What to Do](https://en.skhentml.com/blog/antihistamines-and-poor-sleep/): Antihistamines are known to make you drowsy, yet some people sleep worse on them. An ENT explains sleep fragmentation and practical fixes for allergy sufferers.
+- [Headache from Your Nose? Contact Point Headache and a Deviated Septum](https://en.skhentml.com/blog/contact-point-headache-deviated-septum/): One-sided headache with a blocked nose that painkillers barely touch? An ENT explains contact point headache from a deviated septum and its treatment.
+- [Paper Review: Treating Apogeotropic Horizontal Canal BPPV (Cupulolithiasis) — Two Manoeuvres Compared](https://en.skhentml.com/blog/apogeotropic-horizontal-canal-bppv-repositioning-study/): Paper review: a 2022 randomized trial compared mastoid-vibration repositioning (CuRM) with a new manoeuvre for horizontal canal cupulolithiasis.
+- [Can Hearing Aids Help with Tinnitus? How They Work and Who They Suit](https://en.skhentml.com/blog/hearing-aids-for-tinnitus/): Hearing aids do more than make sounds louder. An ENT explains four ways they may ease tinnitus, what the 2025 guideline says and who should consider them.
+- [Registering a Hearing Disability in Korea: The Tests and the Process](https://en.skhentml.com/blog/hearing-disability-registration-korea-hearing-tests/): How hearing disability assessment works in Korea: prior test records, three visits with pure-tone, speech and ABR tests, the two severity levels and next steps.

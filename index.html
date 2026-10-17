@@ -51,7 +51,7 @@
     {"@type": "Place", "name": "Yulha, Gimhae"}
   ],
   "contactPoint": {"@type": "ContactPoint", "telephone": "+82-55-547-3550", "contactType": "reception", "availableLanguage": ["English", "Korean"]},
-  "employee": {"@type": "Physician", "name": "Dr. Oh Jung-ho", "medicalSpecialty": "Otolaryngologic", "knowsLanguage": ["English", "Korean"]},
+  "employee": {"@type": "Physician", "name": "Dr. Jungho Oh", "medicalSpecialty": "Otolaryngologic", "knowsLanguage": ["English", "Korean"]},
   "sameAs": ["https://www.skhentml.com/"]
 }
 </script>
@@ -60,7 +60,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"Is there an English-speaking ENT doctor in Jinhae or Changwon?","acceptedAnswer":{"@type":"Answer","text":"Yes. Dr. Oh Jung-ho, the ENT (otolaryngology) specialist and director of Sangkwaehan ENT Clinic in Jinhae, Changwon, consults with patients in English. Walk-ins are welcome; phone +82-55-547-3550."}},
+    {"@type":"Question","name":"Is there an English-speaking ENT doctor in Jinhae or Changwon?","acceptedAnswer":{"@type":"Answer","text":"Yes. Dr. Jungho Oh, the ENT (otolaryngology) specialist and director of Sangkwaehan ENT Clinic in Jinhae, Changwon, consults with patients in English. Walk-ins are welcome; phone +82-55-547-3550."}},
     {"@type":"Question","name":"Does Sangkwaehan ENT Clinic in Jinhae see international patients?","acceptedAnswer":{"@type":"Answer","text":"Yes. International residents and visitors in the Jinhae / Changwon area of South Korea are welcome. Korean National Health Insurance (NHIS) is accepted, self-pay is available, and receipts and medical documentation can be issued for private or overseas insurance claims."}},
     {"@type":"Question","name":"Do I need an appointment at Sangkwaehan ENT Clinic?","acceptedAnswer":{"@type":"Answer","text":"No. The clinic runs on a walk-in basis during business hours: Monday to Friday 9:00-18:30 (lunch 12:30-13:45), Saturday 9:00-13:00, closed Sundays and public holidays. Phone: +82-55-547-3550."}},
     {"@type":"Question","name":"What conditions does Sangkwaehan ENT Clinic treat?","acceptedAnswer":{"@type":"Answer","text":"Dizziness and vertigo (BPPV, Meniere's disease, vestibular neuritis), hearing loss, tinnitus, hearing-aid prescription and fitting, sinusitis, allergic rhinitis including sublingual immunotherapy, sore throat, tonsillitis, ear infections, snoring, and general ENT care for adults and children."}},
@@ -327,6 +327,17 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;line-he
   .doc-cols{grid-template-columns:1fr}
   section{padding:48px 0}
 }
+
+/* home blog v2 */
+.topics{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 26px}
+.topic{border:1px solid var(--line);background:#fff;border-radius:22px;padding:7px 14px;font-size:.86rem;font-weight:700;color:var(--ink)}.topic span{color:var(--gray);font-weight:500}.topic:hover{border-color:var(--teal);color:var(--teal)}
+.hposts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hpost{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;color:var(--ink);transition:transform .3s,box-shadow .3s,border-color .3s}
+.hpost:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(0,140,135,.12);border-color:var(--accent)}
+.hpost .tag{font-size:.7rem;font-weight:800;letter-spacing:1.6px;color:var(--teal);text-transform:uppercase}
+.hpost h3{font-size:1.02rem;color:var(--navy);margin:6px 0 8px;line-height:1.35}.hpost p{font-size:.88rem;color:var(--gray);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.hpost .date{font-size:.78rem;color:var(--gray);margin-top:auto;padding-top:12px}
+@media(max-width:860px){.hposts{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -336,13 +347,12 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;line-he
     <div class="brand"><img src="img/logo-mark.png" alt="Sangkwaehan ENT Clinic logo"><span><em class="mint">SANGKWAEHAN</em> ENT CLINIC<small>Jinhae · Changwon, South Korea</small></span></div>
     <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
     <nav class="nav-links">
-      <a href="#clinics">Clinics</a>
-      <a href="#ct">Cone Beam CT</a>
-      <a href="#doctors">Doctors</a>
-      <a href="#equipment">Equipment</a>
-      <a href="#tour">Tour</a>
-      <a href="#visit">Hours &amp; Location</a>
-      <a href="#faq">FAQ</a>
+      <a class="on" href="#about">About</a>
+      <a class="on" href="#clinics">Services</a>
+      <a class="on" href="#doctors">Doctors</a>
+      <a href="blog/">Health Articles</a>
+      <a class="on" href="#visit">Visit Us</a>
+      <a class="on" href="#faq">FAQ</a>
       <a class="ko" href="https://www.skhentml.com/" title="Korean website">한국어 ↗</a>
     </nav>
   </div>
@@ -521,10 +531,10 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;line-he
       <p>Two experienced specialists collaborate on your care — covering ENT and pediatric / general care under one roof.</p>
     </div>
     <div class="doc-card">
-      <div class="doc-photo"><img src="img/doc-oh.png" alt="Dr. Oh Jung-ho, ENT specialist at Sangkwaehan ENT Clinic"></div>
+      <div class="doc-photo"><img src="img/doc-oh.png" alt="Dr. Jungho Oh, ENT specialist at Sangkwaehan ENT Clinic"></div>
       <div class="doc-info">
         <div class="doc-eyebrow">Director &middot; Otolaryngology (ENT) Specialist</div>
-        <div class="doc-name">Dr. Oh Jung-ho<span class="kr">&#50724;&#51221;&#54840; &#50896;&#51109;</span></div>
+        <div class="doc-name">Dr. Jungho Oh<span class="kr">&#50724;&#51221;&#54840; &#50896;&#51109;</span></div>
         <div class="doc-tags"><span class="tag-chip">Consults in English</span><span class="tag-chip">Dizziness &amp; Vertigo</span><span class="tag-chip">Hearing &amp; Tinnitus</span><span class="tag-chip">Hearing Aids</span><span class="tag-chip">Head &amp; Neck</span></div>
         <div class="doc-cols">
           <div>
@@ -686,7 +696,7 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;line-he
     </details>
     <details>
       <summary>Is there an English-speaking ENT doctor?</summary>
-      <p>Yes. Dr. Oh Jung-ho, our ENT specialist and director, consults with patients in English, so you can describe your symptoms and understand your diagnosis and treatment without an interpreter.</p>
+      <p>Yes. Dr. Jungho Oh, our ENT specialist and director, consults with patients in English, so you can describe your symptoms and understand your diagnosis and treatment without an interpreter.</p>
     </details>
     <details>
       <summary>Is the clinic convenient from Masan, Yongwon, Jangyu or Yulha?</summary>
@@ -703,12 +713,29 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;line-he
   </div>
 </section>
 
+<section id="blog" class="soft">
+<div class="container">
+<div class="sec-head">
+<div class="tag">Health Articles</div>
+<h2>Health articles in plain English</h2>
+<p>Written by Dr. Jungho Oh on sleep apnea, hearing, tinnitus, dizziness, nasal symptoms and more.</p>
+</div>
+<div class="topics"><a class="topic" href="blog/#sleep-snoring">Sleep &amp; Snoring <span>6</span></a><a class="topic" href="blog/#ear-hearing">Ear &amp; Hearing <span>5</span></a><a class="topic" href="blog/#dizziness-balance">Dizziness &amp; Balance <span>3</span></a><a class="topic" href="blog/#nose-allergy">Nose &amp; Allergy <span>3</span></a><a class="topic" href="blog/#throat-infection">Throat &amp; Infection <span>1</span></a><a class="topic" href="blog/#general-health">General Health <span>2</span></a></div>
+<div class="hposts">
+<a class="hpost" href="blog/sleep-apnea-weight-loss-medication-cpap/"><div class="tag">Sleep &amp; Snoring</div><h3>Sleep Apnea and Weight-Loss Medication: Do You Still Need Your CPAP?</h3><p>Can weight-loss medication treat obstructive sleep apnea, and can you stop CPAP after losing weight? An ENT specialist in Changwon reviews the evidence.</p><div class="date">September 15, 2026 · 9 min read</div></a>
+<a class="hpost" href="blog/blocked-nose-nasal-spray-guide/"><div class="tag">Nose &amp; Allergy</div><h3>Blocked Nose? A Guide to Nasal Sprays: Steroid, Combination and Decongestant Sprays</h3><p>Steroid, combination and decongestant nasal sprays work differently. An ENT specialist in Jinhae, Changwon explains when each is used and how to use them.</p><div class="date">September 9, 2026 · 10 min read</div></a>
+<a class="hpost" href="blog/tinnitus-cbt-self-help/"><div class="tag">Ear &amp; Hearing</div><h3>Ringing in Your Ears? Tinnitus CBT: Training Your Brain Not to Follow the Sound</h3><p>Tinnitus distress depends on how the brain reacts to sound. An ENT specialist in Jinhae, Changwon explains tinnitus CBT, a 6-step home routine and red flags.</p><div class="date">September 5, 2026 · 7 min read</div></a>
+</div>
+<div style="text-align:center;margin-top:30px"><a class="btn btn-ghost" href="blog/">View all 20 articles</a></div>
+</div>
+</section>
+
 <footer>
   <div class="container">
     <div class="cols">
       <div>
         <h4>Sangkwaehan ENT Clinic</h4>
-        상쾌한이비인후과의원 · Representative: Oh Jung-ho<br>
+        상쾌한이비인후과의원 · Representative: Jungho Oh<br>
         Business registration no. 135-76-00465
       </div>
       <div>
@@ -718,7 +745,8 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;line-he
       </div>
       <div>
         <h4>Links</h4>
-        <a href="https://www.skhentml.com/">Korean website (한국어) ↗</a>
+        <a href="https://www.skhentml.com/">Korean website (한국어) ↗</a><br>
+        <a href="blog/">ENT Health Blog (English)</a>
       </div>
     </div>
     <div class="fine">
@@ -751,7 +779,7 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;line-he
 
 /* scroll-reveal with stagger */
 (function(){
-  var els=document.querySelectorAll('.sec-head,.grid>*,.clinic-grid>*,.doc-card,.feature-row,.ct-band,.gallery,.info-grid>*,#faq details');
+  var els=document.querySelectorAll('.sec-head,.hposts>*,.topics,.grid>*,.clinic-grid>*,.doc-card,.feature-row,.ct-band,.gallery,.info-grid>*,#faq details');
   els.forEach(function(el){el.classList.add('reveal')});
   if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in')});return}
   var io=new IntersectionObserver(function(entries){
