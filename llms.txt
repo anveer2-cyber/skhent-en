@@ -19,8 +19,8 @@
 
 ## Doctors
 
-- Dr. OH JUNGHO: Director, otolaryngology (ENT) specialist; consults in English; visiting professor, Kosin University College of Medicine
-- Dr. LEE YOUNGJIN: Director, board-certified pediatrician with pediatric emergency subspecialty
+- Dr. Jungho Oh: Director, otolaryngology (ENT) specialist; consults in English; visiting professor, Kosin University College of Medicine
+- Dr. Lee Young-jin: Director, board-certified pediatrician with pediatric emergency subspecialty
 
 ## Specialties
 
@@ -31,10 +31,10 @@
 - Imaging: head & neck cone beam CT (Genoray Papaya, new in 2026), X-CUBE 90 ultrasound, Full HD ENT endoscopy
 - Also: vaccinations, IV nutrition therapy (12 private rooms), ENT outpatient procedures, snoring/sleep evaluation, skin & aesthetic procedures
 
-## Blog (English ENT health articles by Dr. OH JUNGHO)
+## Blog (English ENT health articles by Dr. Jungho Oh)
 
 - Blog index: https://en.skhentml.com/blog/
-- Articles are English adaptations of Dr. OH JUNGHO's Korean blog posts; general health information, not individual medical advice.
+- Articles are English adaptations of Dr. Jungho Oh's Korean blog posts; general health information, not individual medical advice.
 
 - [Sleep Apnea and Weight-Loss Medication: Do You Still Need Your CPAP?](https://en.skhentml.com/blog/sleep-apnea-weight-loss-medication-cpap/): Can weight-loss medication treat obstructive sleep apnea, and can you stop CPAP after losing weight? An ENT specialist in Changwon reviews the evidence.
 - [Blocked Nose? A Guide to Nasal Sprays: Steroid, Combination and Decongestant Sprays](https://en.skhentml.com/blog/blocked-nose-nasal-spray-guide/): Steroid, combination and decongestant nasal sprays work differently. An ENT specialist in Jinhae, Changwon explains when each is used and how to use them.
@@ -49,6 +49,7 @@
 - [Noise-Induced Hearing Loss and the Work-Injury Hearing Test in Korea](https://en.skhentml.com/blog/noise-induced-hearing-loss-workers-compensation-hearing-test/): Years in a shipyard or factory and now hard of hearing? An ENT explains noise-induced hearing loss and Korea's workers' compensation hearing test criteria.
 - [Snoring: Just Noise or a Warning Sign? When to Get Tested for Sleep Apnea](https://en.skhentml.com/blog/snoring-or-sleep-apnea-when-to-get-tested/): How simple snoring differs from obstructive sleep apnea, warning signs that mean you should get checked, and how a sleep study confirms it, from an ENT.
 - [Brandt–Daroff Exercises for BPPV: Is It Safe to Do Them at Home?](https://en.skhentml.com/blog/brandt-daroff-exercises-bppv-at-home/): Can you treat BPPV (positional vertigo) at home with Brandt-Daroff exercises? An ENT explains when they help, how to do them and when to see a doctor first.
+- [Atypical BPPV: Short-Arm Variants and Persistent Nystagmus — A Clinical Reference](https://en.skhentml.com/blog/atypical-bppv-short-arm-persistent-nystagmus/): Clinical reference on atypical BPPV: short-arm horizontal and posterior canal variants, conversion, Gufoni, Bow-and-Yaw, Bascule and central red flags.
 - [Weekly Weight-Loss Injections (GLP-1 Medications): A Patient Guide to Side Effects, Diet and Safety](https://en.skhentml.com/blog/glp1-weight-loss-injection-patient-guide/): A patient guide to weekly GLP-1-based weight-loss injections: how they work, injection tips, side effects, gallstone and pancreatitis risk, tests and diet.
 - [Sleeping Worse After Taking an Antihistamine? Why It Happens and What to Do](https://en.skhentml.com/blog/antihistamines-and-poor-sleep/): Antihistamines are known to make you drowsy, yet some people sleep worse on them. An ENT explains sleep fragmentation and practical fixes for allergy sufferers.
 - [Headache from Your Nose? Contact Point Headache and a Deviated Septum](https://en.skhentml.com/blog/contact-point-headache-deviated-septum/): One-sided headache with a blocked nose that painkillers barely touch? An ENT explains contact point headache from a deviated septum and its treatment.
