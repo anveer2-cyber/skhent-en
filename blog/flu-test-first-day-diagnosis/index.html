@@ -244,23 +244,185 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;line-he
 .toc ol{margin:12px 0 0 20px}.toc li{font-size:.95rem!important;line-height:1.55!important;margin-bottom:6px}.toc a{color:var(--teal-dark)}
 @media(max-width:560px){.article{padding:30px 18px 12px}.article p,.article li{font-size:1.02rem}.article h2{font-size:1.2rem}.blog-hero{padding:34px 0 28px}}
 .upd{background:#fff3c4;padding:0 2px}.updtag{font-size:.7rem;font-weight:800;color:#b45309;background:#fff3c4;border:1px solid #f59e0b;border-radius:4px;padding:0 4px;margin-left:4px;white-space:nowrap}
+/* ko-match chrome v1: header + footer modelled on www.skhentml.com (imweb, PC/mobile switch at 992px) */
+:root{--kfont:'Inter','Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;--kteal:#45c1be;--kteal2:#00aba7}
+body{padding-top:164px}
+body>header{position:static;display:block;height:auto;background:none;border:0;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none;z-index:auto;padding:0;margin:0}
+body>footer{background:none;padding:0;margin:0;color:inherit;font-size:inherit;line-height:inherit}
+html{scroll-padding-top:170px}
+.kh{position:fixed;top:0;left:0;right:0;z-index:1000;height:164px;background:#fff;border:0;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none;font-family:var(--kfont);line-height:1.5;transition:background-color .2s ease}
+.kh a{text-decoration:none}
+.kh-bar{position:relative;height:164px}
+.kh-logo{position:absolute;top:14px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:9px;height:65px}
+.kh-mark{width:54px;height:54px;display:block}
+.kh-name{display:block;text-align:left}
+.kh-name b{display:block;font-size:25px;font-weight:700;line-height:1.15;color:#595a59;letter-spacing:-.3px;white-space:nowrap}
+.kh-name b em{font-style:normal;color:var(--kteal)}
+.kh-name small{display:block;margin-top:3px;font-size:11px;font-weight:600;line-height:1.2;letter-spacing:2.5px;color:#595a59;text-align:center;white-space:nowrap}
+.kh-row{position:absolute;left:0;right:0;top:79px;height:70px;max-width:1276px;margin:0 auto;padding:0 10px;display:flex;align-items:center}
+.kh-nav{flex:1;min-width:0}
+.kh-nav ul{display:flex;justify-content:center;list-style:none;margin:0;padding:0;height:70px}
+.kh-nav li{display:flex}
+.kh-nav a{display:flex;align-items:center;padding:0 22px;font-size:17px;line-height:28.9px;color:#212121;white-space:nowrap;transition:color .2s ease}
+.kh-nav a:hover,.kh-nav a:focus-visible,.kh-nav a.on{color:var(--kteal)}
+.kh-lang{margin-left:30px;display:flex;align-items:center;gap:6px;height:34px;font-size:14px;color:#212121!important;white-space:nowrap}
+.kh-lang:hover{color:var(--kteal)!important}
+.kh-burger{margin-left:56px;width:38px;height:40px;padding:0;background:none;border:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer;color:#212121}
+.kh-burger span{display:block;width:19px;height:1.5px;background:currentColor}
+/* mega dropdown (hover on the menu row): translucent mint panel listing every column */
+.kh-mega{position:absolute;left:0;right:0;top:149px;background:rgba(69,193,190,.85);box-shadow:0 6px 12px rgba(0,0,0,.1);opacity:0;visibility:hidden;transition:opacity .2s ease,visibility .2s}
+.kh.mega-open .kh-mega{opacity:1;visibility:visible}
+.kh-mega-in{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr);padding:30px 0 39px;text-align:left}
+.kh-mega-in>div{padding-left:34px}
+.kh-mega-in>div>a{display:block;font-size:15px;font-weight:700;line-height:22px;color:#fff;white-space:nowrap}
+.kh-mega-sp{display:block;height:22px}
+.kh-mega ul{list-style:none;margin:4px 0 0;padding:0}
+.kh-mega li a{display:block;font-size:14px;line-height:29.5px;color:#fff;white-space:nowrap;transition:opacity .2s}
+.kh-mega li a:hover{opacity:.8}
+.kh-mega-in>div>a.kh-mega-faq{margin-top:22px}
+/* side panel (hamburger) */
+.kh-dim{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;z-index:1}
+.kh-panel{position:fixed;top:0;bottom:0;left:0;width:300px;background:#fff;transform:translateX(-100%);transition:transform .3s ease;z-index:2;overflow-y:auto;padding:50px 0 34px;text-align:center;visibility:hidden}
+.kh.panel-open .kh-dim{opacity:1;visibility:visible}
+.kh.panel-open .kh-panel{transform:none;visibility:visible}
+.kh-x{position:absolute;top:20px;right:22px;width:28px;height:28px;padding:4px;background:none;border:0;color:#444;cursor:pointer}
+.kh-plogo{display:inline-flex;flex-direction:column;align-items:center;gap:6px}
+.kh-plogo img{width:36px;height:36px}
+.kh-plogo .kh-name{text-align:center}
+.kh-plogo .kh-name b{font-size:17px}
+.kh-plogo .kh-name small{font-size:8.5px;letter-spacing:1.6px}
+.kh-plist{list-style:none;margin:24px 0 0;padding:0}
+.kh-plist>li>a{display:inline-block;font-size:15px;line-height:34px;color:#444;letter-spacing:.3px}
+.kh-plist>li>a:hover,.kh-plist>li.open>a{color:var(--kteal)}
+.kh-acc{display:inline-block;width:18px;height:18px;margin-left:2px;padding:0;background:none;border:0;cursor:pointer;vertical-align:middle;position:relative;color:#888}
+.kh-acc::before{content:"";position:absolute;left:5px;top:3px;width:6px;height:6px;border-right:1.2px solid currentColor;border-bottom:1.2px solid currentColor;transform:rotate(45deg)}
+.kh-plist li.open>.kh-acc{color:var(--kteal)}
+.kh-plist li.open>.kh-acc::before{transform:rotate(-135deg);top:7px}
+.kh-plist ul{display:none;list-style:none;margin:0;padding:2px 0 8px}
+.kh-plist li.open>ul{display:block}
+.kh-plist ul a{display:block;font-size:14px;line-height:31px;color:#595a59;letter-spacing:.3px}
+.kh-plist ul a:hover{color:var(--kteal)}
+.kh-pfoot{margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.kh-ptel{font-size:16px;font-weight:700;color:var(--kteal2)!important}
+.kh-pko{font-size:13px;color:#595a59!important}
+/* footer */
+.kf{background:var(--kteal);color:#fff;font-family:var(--kfont);padding:69px 20px 64px;font-size:15px;line-height:30px;text-align:center}
+.kf a{color:#fff;text-decoration:none}
+.kf-in{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;align-items:center}
+.kf-logo{display:inline-flex;align-items:center;gap:9px}
+.kf-logo img{width:54px;height:54px;filter:brightness(0) invert(1)}
+.kf-logo .kh-name b,.kf-logo .kh-name small{color:#fff}
+.kf-links{margin-top:10px;font-weight:700}
+.kf-links i,.kf-info i{font-style:normal;font-weight:400;margin:0 16px}
+.kf-info{margin-top:30px;font-weight:700}
+.kf-info span[lang]{font-weight:700}
+.kf-fine{margin-top:30px;line-height:25.5px;max-width:900px}
+.kf-btns{margin-top:32px;display:flex;justify-content:center;flex-wrap:wrap;gap:16px 56px}
+.kf-btns a{display:inline-flex;align-items:center;gap:10px;height:39px;padding:0 22px;background:#fff;color:var(--kteal)!important;border-radius:8px;font-size:12px;letter-spacing:1px;line-height:17px;transition:opacity .2s}
+.kf-btns a:hover{opacity:.85}
+.kf-btns b{font-size:15px;line-height:12px}
+@media (max-width:991px){
+  body{padding-top:94px}
+  html{scroll-padding-top:100px}
+  .kh{height:94px;border-bottom:1px solid #e7e7e7}
+  .kh-bar{height:93px}
+  .kh-logo{left:10px;top:9px;transform:none;height:41px;gap:6px}
+  .kh-mark{width:40px;height:40px}
+  .kh-name b{font-size:18px}
+  .kh-name small{font-size:8px;letter-spacing:1.9px;margin-top:2px}
+  .kh-row{position:static;padding:0;max-width:none;height:0}
+  .kh-nav,.kh-mega{display:none}
+  .kh-lang{position:absolute;top:50px;left:20px;margin:0;font-size:11px;gap:4px}
+  .kh-lang svg{width:11px;height:11px}
+  .kh-burger{position:absolute;right:10px;top:22px;margin:0;width:46px;height:48px;gap:6px}
+  .kh-burger span{width:22px;height:2px}
+  .kh.kh-over{height:67px;background:transparent;border-bottom:1px solid rgba(255,255,255,.3)}
+  .kh.kh-over .kh-bar{height:66px}
+  .kh.kh-over .kh-logo{top:12px}
+  .kh.kh-over .kh-mark{width:44px;height:44px}
+  .kh.kh-over .kh-name{display:none}
+  .kh.kh-over .kh-lang{top:16px;left:67px;color:#fff!important}
+  .kh.kh-over .kh-burger{top:9px;color:#fff}
+  .kh-panel{left:auto;right:0;width:calc(100% - 90px);max-width:340px;transform:translateX(100%);padding:0 0 30px;text-align:left}
+  .kh-x{position:absolute;top:22px;right:16px;left:auto}
+  .kh-plogo{display:flex;flex-direction:row;align-items:center;gap:6px;padding:20px 60px 18px 20px}
+  .kh-plogo img{width:30px;height:30px}
+  .kh-plogo .kh-name{text-align:left}
+  .kh-plogo .kh-name b{font-size:15px}
+  .kh-plogo .kh-name small{font-size:7.5px;text-align:left}
+  .kh-plist{margin:0;border-top:1px solid #eee}
+  .kh-plist>li{position:relative;border-bottom:1px solid #eee}
+  .kh-plist>li>a{display:block;padding:0 56px 0 20px;font-size:14.5px;line-height:41px;color:#212121}
+  .kh-plist>li.open{background:#fff}
+  .kh-plist>li.open>a{background:#f5f5f5;color:var(--kteal)}
+  .kh-acc{position:absolute;right:0;top:0;width:52px;height:41px;margin:0}
+  .kh-acc::before{left:21px;top:14px;width:8px;height:8px}
+  .kh-plist li.open>.kh-acc::before{top:19px}
+  .kh-plist ul{padding:6px 0 10px}
+  .kh-plist ul a{padding-left:30px;font-size:13px;line-height:29px;color:#212121}
+  .kh-pfoot{align-items:flex-start;padding:0 20px}
+  .kf{padding:59px 16px 46px;text-align:left;font-size:12px;line-height:25.5px}
+  .kf-in{align-items:flex-start}
+  .kf-logo img{width:44px;height:44px}
+  .kf-logo .kh-name b{font-size:19px}
+  .kf-logo .kh-name small{font-size:8px;letter-spacing:2px}
+  .kf-btns{order:1;margin-top:34px;justify-content:flex-start;gap:12px}
+  .kf-btns a{height:32px;padding:0 14px;letter-spacing:.5px}
+  .kf-links{order:2;margin-top:18px;line-height:24px}
+  .kf-links i,.kf-info i{margin:0 8px}
+  .kf-info{order:3;margin-top:6px}
+  .kf-fine{order:4;margin-top:24px;color:#f4f4f4}
+  .kf-info i{display:none}
+  .kf-info .seg{display:block}
+}
+/* /ko-match chrome v1 */
 </style>
 </head>
 <body>
 <header>
-  <div class="container nav">
-    <a class="brand" href="../../"><img src="../../img/logo-mark.png" alt="Sangkwaehan ENT Clinic logo" width="386" height="386"><span><em class="mint">SANGKWAEHAN</em> ENT CLINIC<small>Jinhae · Changwon, South Korea</small></span></a>
-    <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
-    <nav class="nav-links">
-      <a href="../../#about">About</a>
-      <a href="../../#clinics">Services</a>
-      <a href="../../#doctors">Doctors</a>
-      <a class="on" href="../">Health Articles</a>
-      <a href="../../#visit">Visit Us</a>
-      <a href="../../#faq">FAQ</a>
-      <a class="ko" href="https://www.skhentml.com/" title="Korean website">한국어 ↗</a>
-    </nav>
+<div class="kh" id="kh">
+  <div class="kh-bar">
+    <a class="kh-logo" href="../../" aria-label="Sangkwaehan ENT Clinic home"><img class="kh-mark" src="../../img/logo-mark.png" alt="Sangkwaehan ENT Clinic logo" width="386" height="386"><span class="kh-name"><b><em>Sangkwaehan</em> ENT Clinic</b><small lang="ko">상쾌한이비인후과의원</small></span></a>
+    <div class="kh-row">
+      <nav class="kh-nav" aria-label="Main menu">
+        <ul>
+          <li><a href="../../#about">About</a></li>
+          <li><a href="../../#clinics">Services</a></li>
+          <li><a href="../../#doctors">Doctors</a></li>
+          <li><a href="../../blog/" class="on">Health Articles</a></li>
+          <li><a href="../../#visit">Visit Us</a></li>
+          <li><a href="../../#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <a class="kh-lang" href="https://www.skhentml.com/" hreflang="ko" title="Korean website (한국어)"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2.2 1.6"/></svg><span>Korean website</span></a>
+      <button type="button" class="kh-burger" aria-label="Open menu" aria-controls="khPanel" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
   </div>
+  <div class="kh-mega" id="khMega">
+    <div class="kh-mega-in">
+      <div><a href="../../#about">About</a><ul><li><a href="../../#about">Why Sangkwaehan</a></li><li><a href="../../#equipment">Equipment</a></li><li><a href="../../#tour">Clinic Tour</a></li></ul></div>
+      <div><a href="../../#clinics">Services</a><ul><li><a href="../../#clinics">Dizziness &amp; Pain Clinic</a></li><li><a href="../../#clinics">Hearing Loss &amp; Tinnitus</a></li><li><a href="../../#clinics">Hearing Aid &amp; Rehab</a></li><li><a href="../../#clinics">Rhinitis &amp; Allergy Clinic</a></li><li><a href="../../#clinics">Snoring &amp; Sleep Clinic</a></li><li><a href="../../#clinics">Vaccination Clinic</a></li></ul></div>
+      <div><span class="kh-mega-sp" aria-hidden="true"></span><ul><li><a href="../../#clinics">IV Nutrition &amp; Wellness</a></li><li><a href="../../#clinics">Ultrasound &amp; CT Clinic</a></li><li><a href="../../#clinics">Endoscopy Clinic</a></li><li><a href="../../#clinics">Surgery &amp; Procedures</a></li><li><a href="../../#clinics">Skin &amp; Aesthetics</a></li><li><a href="../../#clinics">Precision Diagnostics</a></li></ul></div>
+      <div><a href="../../#doctors">Doctors</a><ul><li><a href="../../#doctors">Dr. OH JUNGHO</a></li><li><a href="../../#doctors">Dr. LEE YOUNGJIN</a></li></ul></div>
+      <div><a href="../../blog/">Health Articles</a><ul><li><a href="../../blog/#sleep-snoring">Sleep &amp; Snoring</a></li><li><a href="../../blog/#ear-hearing">Ear &amp; Hearing</a></li><li><a href="../../blog/#dizziness-balance">Dizziness &amp; Balance</a></li><li><a href="../../blog/#nose-allergy">Nose &amp; Allergy</a></li><li><a href="../../blog/#throat-infection">Throat &amp; Infection</a></li><li><a href="../../blog/#general-health">General Health</a></li></ul></div>
+      <div><a href="../../#visit">Visit Us</a><ul><li><a href="../../#visit">Clinic Hours</a></li><li><a href="../../#visit">Address &amp; Directions</a></li></ul><a class="kh-mega-faq" href="../../#faq">FAQ</a></div>
+    </div>
+  </div>
+  <div class="kh-dim" id="khDim"></div>
+  <div class="kh-panel" id="khPanel" aria-hidden="true">
+    <button type="button" class="kh-x" aria-label="Close menu"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2l16 16M18 2 2 18" stroke="currentColor" stroke-width="1.4"/></svg></button>
+    <a class="kh-plogo" href="../../"><img src="../../img/logo-mark.png" alt="" width="386" height="386"><span class="kh-name"><b><em>Sangkwaehan</em> ENT Clinic</b><small lang="ko">상쾌한이비인후과의원</small></span></a>
+    <ul class="kh-plist">
+      <li class="has open"><a href="../../#about">About</a><button type="button" class="kh-acc" aria-label="Show About submenu" aria-expanded="true"></button><ul><li><a href="../../#about">Why Sangkwaehan</a></li><li><a href="../../#equipment">Equipment</a></li><li><a href="../../#tour">Clinic Tour</a></li></ul></li>
+      <li class="has"><a href="../../#clinics">Services</a><button type="button" class="kh-acc" aria-label="Show Services submenu" aria-expanded="false"></button><ul><li><a href="../../#clinics">Dizziness &amp; Pain Clinic</a></li><li><a href="../../#clinics">Hearing Loss &amp; Tinnitus</a></li><li><a href="../../#clinics">Hearing Aid &amp; Rehab</a></li><li><a href="../../#clinics">Rhinitis &amp; Allergy Clinic</a></li><li><a href="../../#clinics">Snoring &amp; Sleep Clinic</a></li><li><a href="../../#clinics">Vaccination Clinic</a></li><li><a href="../../#clinics">IV Nutrition &amp; Wellness</a></li><li><a href="../../#clinics">Ultrasound &amp; CT Clinic</a></li><li><a href="../../#clinics">Endoscopy Clinic</a></li><li><a href="../../#clinics">Surgery &amp; Procedures</a></li><li><a href="../../#clinics">Skin &amp; Aesthetics</a></li><li><a href="../../#clinics">Precision Diagnostics</a></li></ul></li>
+      <li><a href="../../#doctors">Doctors</a></li>
+      <li class="has"><a href="../../blog/">Health Articles</a><button type="button" class="kh-acc" aria-label="Show Health Articles submenu" aria-expanded="false"></button><ul><li><a href="../../blog/#sleep-snoring">Sleep &amp; Snoring</a></li><li><a href="../../blog/#ear-hearing">Ear &amp; Hearing</a></li><li><a href="../../blog/#dizziness-balance">Dizziness &amp; Balance</a></li><li><a href="../../blog/#nose-allergy">Nose &amp; Allergy</a></li><li><a href="../../blog/#throat-infection">Throat &amp; Infection</a></li><li><a href="../../blog/#general-health">General Health</a></li></ul></li>
+      <li><a href="../../#visit">Visit Us</a></li>
+      <li><a href="../../#faq">FAQ</a></li>
+    </ul>
+    <div class="kh-pfoot"><a class="kh-ptel" href="tel:+82555473550">+82-55-547-3550</a><a class="kh-pko" href="https://www.skhentml.com/" hreflang="ko">Korean website (한국어) ↗</a></div>
+  </div>
+</div>
 </header>
 <section class="blog-hero">
   <div class="container">
@@ -327,31 +489,46 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;line-he
 <nav class="related" aria-label="Related articles"><h2>Related articles</h2><ul><li><a href="../flu-test-negative-early-rapid-vs-molecular/">Negative Flu Test Early in Illness: Rapid Antigen vs Molecular Testing</a></li><li><a href="../covid-and-flu-vaccines-same-day/">Can You Get the COVID-19 and Flu Vaccines on the Same Day?</a></li><li><a href="../rhinitis-and-humidity-guide/">Rhinitis and Humidity: A Practical Guide to a Healthier Nose</a></li></ul><p class="more"><a href="../">All articles on the ENT Health Blog</a> · <a href="../../">Sangkwaehan ENT Clinic home</a></p></nav>
 <div style="height:48px"></div>
 <footer>
-  <div class="container">
-    <div class="cols">
-      <div>
-        <h4>Sangkwaehan ENT Clinic</h4>
-        상쾌한이비인후과의원 · Representative: OH JUNGHO<br>
-        Business registration no. 135-76-00465
-      </div>
-      <div>
-        <h4>Contact</h4>
-        Tel: <a href="tel:+82555473550">+82-55-547-3550</a><br>
-        Suite 202 (2F), Hi-Zone Building, 999 Jinhae-daero,<br>Jinhae-gu, Changwon-si, Gyeongsangnam-do, South Korea
-      </div>
-      <div>
-        <h4>Links</h4>
-        <a href="https://www.skhentml.com/">Korean website (한국어) ↗</a><br>
-        <a href="../../">English homepage</a><br>
-        <a href="../">ENT Health Blog</a><br>
-        <a href="https://blog.naver.com/anveer">Korean blog (Naver) ↗</a>
-      </div>
+<div class="kf">
+  <div class="kf-in">
+    <a class="kf-logo" href="../../"><img src="../../img/logo-mark.png" alt="" width="386" height="386"><span class="kh-name"><b>Sangkwaehan ENT Clinic</b><small lang="ko">상쾌한이비인후과의원</small></span></a>
+    <p class="kf-links"><a href="https://www.skhentml.com/" hreflang="ko">Korean website (한국어) ↗</a><i>|</i><a href="../../blog/">ENT Health Blog (English)</a><i>|</i><a href="https://blog.naver.com/anveer" hreflang="ko">Korean blog (Naver) ↗</a></p>
+    <div class="kf-info">
+      <p><span class="seg">Sangkwaehan ENT Clinic <span lang="ko">상쾌한이비인후과의원</span></span><i>|</i><span class="seg">Representative: OH JUNGHO</span><i>|</i><span class="seg">Business registration no. 135-76-00465</span></p>
+      <p>Suite 202 (2F), Hi-Zone Building, 999 Jinhae-daero, Jinhae-gu, Changwon-si, Gyeongsangnam-do, South Korea</p>
+      <p>Tel: <a href="tel:+82555473550">+82-55-547-3550</a></p>
     </div>
-    <div class="fine">
-      Articles on this blog are English adaptations of posts originally written in Korean by Dr. OH JUNGHO. They are for general information only and do not replace an individual medical consultation.<br>
-      Copyright © 2026 Sangkwaehan ENT Clinic. All rights reserved.
+    <p class="kf-fine">Articles on this blog are English adaptations of posts originally written in Korean by Dr. OH JUNGHO. They are for general information only and do not replace an individual medical consultation.<br>Copyright © 2026 Sangkwaehan ENT Clinic. All rights reserved.</p>
+    <div class="kf-btns">
+      <a href="https://maps.google.com/?cid=13356393889994433552" target="_blank" rel="noopener"><svg width="12" height="14" viewBox="0 0 12 16" aria-hidden="true"><path d="M6 0a6 6 0 0 0-6 6c0 4.5 6 10 6 10s6-5.5 6-10a6 6 0 0 0-6-6zm0 8.3A2.3 2.3 0 1 1 6 3.7a2.3 2.3 0 0 1 0 4.6z" fill="currentColor"/></svg>Google Maps</a>
+      <a href="https://map.naver.com/p/search/%EC%83%81%EC%BE%8C%ED%95%9C%EC%9D%B4%EB%B9%84%EC%9D%B8%ED%9B%84%EA%B3%BC" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.273 12.845 7.376 0H0v24h7.726V11.156L16.624 24H24V0h-7.727v12.845z" fill="currentColor"/></svg>Naver Map</a>
+      <a href="https://map.kakao.com/?q=%EC%83%81%EC%BE%8C%ED%95%9C%EC%9D%B4%EB%B9%84%EC%9D%B8%ED%9B%84%EA%B3%BC" target="_blank" rel="noopener"><b aria-hidden="true">k</b>Kakao Map</a>
     </div>
   </div>
+</div>
 </footer>
+<script>
+/* ko-match chrome v1: header (mega menu, side panel, mobile overlay) */
+(function(){
+  var h=document.getElementById('kh');if(!h)return;
+  var over=document.body.classList.contains('home');
+  function sc(){var y=window.pageYOffset||0;if(over)h.classList.toggle('kh-over',y<=0);h.classList.toggle('kh-solid',y>0)}
+  sc();addEventListener('scroll',sc,{passive:true});
+  var nav=h.querySelector('.kh-nav ul'),mega=document.getElementById('khMega'),t=null;
+  function openM(){clearTimeout(t);h.classList.add('mega-open')}
+  function closeM(){clearTimeout(t);t=setTimeout(function(){h.classList.remove('mega-open')},140)}
+  if(nav&&mega){nav.addEventListener('mouseenter',openM);nav.addEventListener('mouseleave',closeM);mega.addEventListener('mouseenter',openM);mega.addEventListener('mouseleave',closeM);
+    nav.addEventListener('focusin',openM);mega.addEventListener('focusin',openM);
+    h.addEventListener('focusout',function(e){if(!h.contains(e.relatedTarget))closeM()});
+    mega.addEventListener('click',function(e){if(e.target.closest('a'))h.classList.remove('mega-open')})}
+  var panel=document.getElementById('khPanel'),dim=document.getElementById('khDim'),bur=h.querySelector('.kh-burger');
+  function openP(){h.classList.add('panel-open');h.classList.remove('mega-open');panel.setAttribute('aria-hidden','false');bur.setAttribute('aria-expanded','true');document.documentElement.style.overflow='hidden';var x=panel.querySelector('.kh-x');if(x)x.focus()}
+  function closeP(){h.classList.remove('panel-open');panel.setAttribute('aria-hidden','true');bur.setAttribute('aria-expanded','false');document.documentElement.style.overflow=''}
+  bur.addEventListener('click',openP);dim.addEventListener('click',closeP);panel.querySelector('.kh-x').addEventListener('click',closeP);
+  panel.addEventListener('click',function(e){if(e.target.closest('a'))closeP()});
+  panel.querySelectorAll('.kh-acc').forEach(function(b){b.addEventListener('click',function(){var li=b.parentNode,o=li.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')})});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeP();h.classList.remove('mega-open')}});
+})();
+</script>
 </body>
 </html>
